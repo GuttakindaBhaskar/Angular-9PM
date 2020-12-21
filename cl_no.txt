@@ -71,7 +71,71 @@ custSerEx
 
             app.module.ts
         index.html 
-***************************************************  
+***************************************************
+
+
+Step 1.
+     create the modal based on server response
+
+
+*****************************************************
+countriesEx
+         src
+           app
+              model
+                 countries.model.ts
+*****************************************************
+
+
+Step 2.
+   create the service
+
+**********************************************************
+countriesEx
+          src
+            app
+              services
+                 countries.servie.ts
+**********************************************************
+
+Step 3.
+   create the component
+
+*************************************************************
+countriesEx
+          src
+            app
+              components
+                   countries.component.ts
+                   countries.component.html
+*************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
