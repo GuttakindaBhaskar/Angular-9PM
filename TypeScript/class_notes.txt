@@ -1,0 +1,103 @@
+TypeScript
+
+	- TypeScript is the Programming language.
+
+	- TypeScript introduced by Microsoft.
+
+	- TypeScript used to build the Angular,React and Node,.... Applications.
+
+	- TypeScript follows th OOPS Features
+
+		- Inheritance
+
+		- Polymorphism
+
+		- Encapsulation
+
+		    ----
+		    ----
+		    ----
+
+	- we will save the TypeScript files with ".ts" extension.
+
+	- Browsers can't understand TypeScript, will understand only JavaScript.
+
+	- so, as a developer, we must convert TypeScript to Equalent JavaScript.
+
+	- Converting TypeScript to Equalent JavaScript called as Transpilation.
+
+	- "tsc" is the tool, used to perform the Transpilation.
+
+	- tsc stands for TypeScript Compiler.
+
+	- Superset of JavaScript also called as TypeScript.
+
+
+
+Ex.
+	demo.ts
+
+	> tsc demo.ts
+
+	    o/p
+
+	demo.js
+
+
+	> node demo.js
+
+
+	- node is the tool, used to execute the javascript.
+
+
+	- Recomended IDE to build TypeScript Applications is VisualStudioCode.
+
+	- VisualStudioCode is the IDE, used to build the TypeScript Applications.
+
+
+Installation of Softwares
+=========================
+
+1) download and install NodeJS
+
+	- NodeJS containes following tools
+
+		@ npm
+		@ node
+
+	- npm stands for "Node Packaging Manager".
+
+	- npm helps to install the TypeScript.
+
+	- node tool helps to execute the JavaScript
+
+
+website : https://nodejs.org/en/download/
+
+file    : node-v14.15.1-x64.msi
+
+
+2) install TypeScript
+
+	- we will install TypeScript by using following command.
+
+	> npm install -g typescript
+
+	where "-g" stands for global installation
+
+
+3) download and install VisualStudioCode
+
+	- VisualStudioCode is the IDE, provided by Microsoft.
+
+	- VisualStudioCode is Recomended IDE to Build UI Applications
+
+
+website : https://code.visualstudio.com/docs/?dv=win
+
+file    : VSCodeUserSetup-x64-1.51.1.exe
+
+
+
+
+

@@ -1,0 +1,92 @@
+Component
+---------
+    - Simple "TypeScript class" behaves like Component.
+
+    - Perticular "portion" of webpage also called as Component.
+
+    - As a Angular Developer, we can create more than one component.
+
+    - As a angular Developer, we can provide communication between one component to another component.
+
+    - we will deploy all components in src/app folder.
+
+    - we will register components in "app.module.ts" file.
+
+*************************************************
+demoApp
+     src  
+       app
+         first.component.ts
+         first.component.html
+
+         app.module.ts
+      index.html
+***********************************************
+
+Multiple Components
+-------------------
+
+*************************************************************
+multiple-components
+                  src
+                     app
+                        header.component.ts
+                        header.component.html
+                        header.component.css
+
+                        home.component.ts
+                        home.component.html
+                        home.component.css
+
+                        footer.component.ts
+                        footer.component.html
+                        footer.component.css
+
+
+                        main.component.ts
+                        main.component.html
+                        main.component.css
+
+
+                        app.module.ts
+                    index.html
+**************************************************************************
+
+
+*************************************************
+custSerEx
+        src
+          app
+            services
+               my.service.ts
+            components
+               first.component.ts
+               first.component.html
+
+               second.component.ts
+               second.component.html
+
+               main.component.ts
+               main.component.html
+
+            app.module.ts
+        index.html 
+***************************************************  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
