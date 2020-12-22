@@ -112,6 +112,78 @@ countriesEx
 
 
 
+Rest API Example
+----------------
+
+1) create the angular application
+
+   > ng new customersEx
+
+2) switch to angular application
+
+   > cd customersEx
+
+3) create the model based on server response
+
+**************************************
+customersEx
+          src
+            app
+              model
+                 customers.model.ts
+***************************************
+
+
+4) create the service
+
+*****************************************
+customersEx
+         src
+           app
+             services
+                customers.service.ts
+****************************************
+
+5) create the component
+
+*******************************************
+customersEx
+         src
+           app
+             components
+                customers.component.ts
+                customers.component.html
+*******************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

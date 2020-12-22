@@ -1,0 +1,19 @@
+<table border="1"
+       cellpadding="10px"
+       cellspacing="10px"
+       align="center">
+    <thead style="background-color: gray;">
+        <tr>
+            <td>Name</td>
+            <td>City</td>
+            <td>Country</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let obj of response">
+            <td>{{obj.Name}}</td>
+            <td>{{obj.City}}</td>
+            <td>{{obj.Country}}</td>
+        </tr>
+    </tbody>
+</table>
