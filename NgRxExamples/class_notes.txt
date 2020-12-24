@@ -1,0 +1,144 @@
+1) Basic Architecture
+
+2) NgRx without RxJS   ( without Backend )
+
+3) NgRx with RxJS       (with Backend)
+
+    => MongoDB
+
+    => Node Server
+
+    => RxJS   (Observable)
+
+    => NgRx   (State)
+
+Store
+-----
+    - Store the main component of NgRx Package.
+    - Store Accomidates Reducer, initialState and State.
+
+Reducer
+-------
+
+    - Business Logic Called as Reducer.
+    - Reducer output called as State.
+
+State
+-----
+
+    - Final Application Result (Reducer Output) called as State.
+
+initialState
+------------
+
+    - Initial Input of the Application called as initialState.
+
+dispatch
+--------
+    - sending the request from client application store called as dispatch
+
+
+Action
+------
+    - client application requirement technically called as Action.
+
+    Ex.
+        WITHDRAW
+        DEPOSIT
+        MINISTATEMENT
+        ----
+        ----
+        ----
+
+payload:
+--------
+    - sending the dispatch from client to store with "data" technically called as payload.
+
+    Ex.
+            1000
+            10000
+
+subscribe
+---------
+    - Receiving (State) from store to client application.
+
+
+Basic Example on NgRx Package
+-----------------------------
+
+Step 1.
+    create the angular application
+
+    > ng new ngRxDemo1
+
+Step 2.
+    switch to angular application
+
+    > cd ngRxDemo1
+
+
+Step 3.
+    download the modules
+
+    => @ngrx/core
+
+    => @ngrx/store
+
+    => @ngrx/action
+
+
+    > yarn add @ngrx/core   @ngrx/store   @ngrx/action  bootstrap  --save
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
