@@ -1,0 +1,87 @@
+1) MongoDB
+
+    - MongoDB database is NoSQL DataBase.
+
+    - MongoDB Supports the JSON.
+
+    - MongoDB DataBase is the light weight database.    
+
+    - The default Port no MongoDB DataBase is 27017.
+
+    - MongoDB database follows "mongodb" protocol.
+
+    - MongoDB follows the "client server architecture"
+
+
+*************************************************************************
+            SQL                                     NoSQL
+
+    database                                        database
+
+    table                                           collection
+
+    row                                             document
+
+    column                                          field
+
+    primary key                                     _id
+****************************************************************************    
+
+
+create the database
+===================
+
+> use angdb;
+    - automatically "angdb" database will create and switches also.
+
+create the collection
+=====================
+
+> db.createCollection("employees");
+
+    - automatically "employees" collection will create.
+
+insert the data
+===============
+
+> db.employees.insertOne({"e_id":111,"e_name":"e_one","e_sal":10000});
+
+update the data
+===============
+
+> db.employees.updateOne({"e_id":111},{$set:{"e_name":"employee_one"}});
+
+
+delete the employee
+===================
+
+> db.employees.deleteOne({"e_id":111});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
