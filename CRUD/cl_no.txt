@@ -58,6 +58,85 @@ delete the employee
 > db.employees.deleteOne({"e_id":111});
 
 
+final details
+*************************************************************************
+database name    :  angdb
+
+collection name  :  products      (p_id,p_name,p_cost)
+
+protocol         :  mongodb
+
+port             :  27017
+*************************************************************************
+
+2) implement the Node Server
+
+    => create the directory
+            Ex.
+                    server
+
+    => download the node modules  (libraries) with the help of yarn tool
+
+            1) express
+
+            2) mongodb
+
+            3) body-parser
+
+            4) cors
+
+            - express library used to develop the rest apis.
+
+                    Ex.
+                            GET
+                            POST
+                            PUT
+                            DELETE
+                            HEAD
+                            OPTIONS
+
+            - mongodb library used to connect to mongodb database.
+
+            - body-parser library used to receive the data from client application.
+
+            - cors library used to enable the ports communication.
+
+            > yarn add express mongodb body-parser cors --save
+
+
+        => develop rest services by using nodejs (express).
+
+        ********************************************************
+        server
+            fetch
+               fetch.js
+            insert
+                insert.js
+            update
+                update.js
+            remove
+                remove.js
+            server.js
+        *********************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
