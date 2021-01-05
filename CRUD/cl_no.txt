@@ -119,6 +119,100 @@ port             :  27017
             server.js
         *********************************************************
 
+Integrating Rest Services to Angular application
+================================================
+step 1.
+    create the angular application
+
+        > ng new crudEx
+
+    - where "crudEx" is the angular application
+
+step 2.
+    switch to angular application
+
+    > cd crudEx
+
+    - automatically we can switch to angular application
+
+step 3.
+    download libraries
+
+    => @ngrx/core
+
+    => @ngrx/store
+
+    => @ngrx/effects
+
+
+        > yarn add @ngrx/core @ngrx/store @ngrx/effects --save
+
+
+step 4.
+    create the model
+
+
+    product.model.ts
+
+
+
+step 5.
+    create the actions
+
+    product.action.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

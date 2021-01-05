@@ -1,6 +1,7 @@
 //used to encapsulates the modules    @fetch        @insert     @update     @remove
 let express = require("express");
 let cors = require("cors");
+let bodyParser = require("body-parser");
 
 let app = express();
 //where "app" called as rest object (master object)
@@ -10,6 +11,12 @@ let app = express();
 //enable the ports communication
 app.use(cors());
 
+
+//set the json as MIME Type
+app.use(bodyParser.json());
+
+//parse the json
+app.use(bodyParser.urlencoded({extended:false}));
 
 app.use("/fetch",require("./fetch/fetch"));
 app.use("/insert",require("./insert/insert"))
@@ -21,4 +28,12 @@ let port = process.env.PORT || 8080;
 app.listen(port,()=>{
     console.log("server started");
 });
+
+
+
+//http://localhost:8080/fetch      (GET)
+//http://localhost:8080/insert     (POST)
+//http://localhost:8080/update     (PUT)
+//http://localhost:8080/remove     (DELETE)
+
 

@@ -2,9 +2,10 @@ let express = require("express");
 let mongodb = require("mongodb");
 let ashokIT = mongodb.MongoClient;
 let remove = express.Router().delete("/",(req,res)=>{
-    ashokIT.connect("mongodb://localhost:27017/angdb",(err,db)=>{
+    ashokIT.connect("mongodb+srv://admin:admin@miniprojectdb.nzphu.mongodb.net/angdb?retryWrites=true&w=majority",(err,conn)=>{
         if(err) throw err;
         else{
+            let db = conn.db("angdb");
             db.collection("products").deleteOne({"p_id":req.body.p_id},(err,result)=>{
                 if(err) throw err;
                 else{

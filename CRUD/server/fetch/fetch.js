@@ -9,9 +9,10 @@ const mongodb = require("mongodb");
 const ashokIT = mongodb.MongoClient;
 
 const fetch = express.Router().get("/",(req,res)=>{
-    ashokIT.connect("mongodb://localhost:27017/angdb",(err,db)=>{
+    ashokIT.connect("mongodb+srv://admin:admin@miniprojectdb.nzphu.mongodb.net/angdb?retryWrites=true&w=majority",(err,conn)=>{
         if(err) throw err;
         else{
+            let db = conn.db("angdb");
             db.collection("products").find().toArray((err,array)=>{
                 if(err) throw err;
                 else{
