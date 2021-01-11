@@ -155,6 +155,153 @@ customersEx
                 customers.component.html
 *******************************************
 
+                                          ****** Single Page Application ******
+
+      - loading one component to another component, without refreshing the whole web page called as single page application.
+
+      - loading one component to another component, in single page application called as Routing.
+
+      - we will implement Routing, with the help of "Routes" class.
+
+      - "Routes" class present in "RouterModule".
+
+      - "RouterModule" present in "@angular/router" package.
+
+
+Step 1.
+   create the components
+
+   => MainComponent              (master)
+
+   => LaptopComponent            (child)
+
+   => CameraComponent            (child)
+
+   => ClothesComponent           (child)
+
+
+   > ng g c components/main --selector=main -is --skipTests --flat true
+
+   > ng g c components/laptop --selector=laptop -is --skipTests --flat true
+
+   > ng g c components/camera --selector=camera -is --skipTests --flat true
+
+   > ng g c components/clothes --selector=clothes -is --skipTests --flat true
+
+Step 2.
+   implement the business logic in target components.
+
+Step 3.
+   create the hyperlinks
+
+   main.component.html
+
+      => "/laptops"  -----------   LaptopComponent
+
+      => "/cameras"  ----------    CameraComponent
+
+      => "/clothes"  ----------    ClothesComponent
+
+
+Step 4.
+   implement the Routing
+
+      app.module.ts
+
+Child Routing
+=============
+
+step 1.
+   create the components
+
+step 2.
+   implement the business logic in target components
+
+step 3.
+   create the hyperlinks
+
+   dell ------  DellComponent
+
+   canon  -----  CaninComponent
+
+   niki   -----  NikiComponent
+
+step 4.
+   implement the routing   
+
+
+
+                                       ***** Authentication Guards *****
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
