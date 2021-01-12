@@ -233,6 +233,36 @@ step 4.
 
                                        ***** Authentication Guards *****
 
+1) CanActivate
+
+         - used to perform Authentication while entering to main routes.
+
+2) CanDeactivate
+
+      - used to perform Authentication while leaving the main routes.
+
+3) CanActivateChild
+
+      - used to perform the Authentication while entering into child routes.
+
+
+[Note : we will implement Authentication Guards with the help of Custom Services]
+
+
+******************************************************
+spaDemo1
+       src
+         app
+           auth
+             auth.guards.ts
+*****************************************************             
+
+
+
+
+
+
+
 
 
 

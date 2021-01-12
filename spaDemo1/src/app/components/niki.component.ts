@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'niki',
@@ -8,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NikiComponent implements OnInit {
   var_six:any;
-  constructor() {
-    this.var_six = "NiKi Shirts Soon....!";
+  constructor(public route:ActivatedRoute) {
+    this.var_six = this.route.snapshot.params["p_id"]+"...."+this.route.snapshot.params["p_name"]+"...."+this.route.snapshot.params["p_cost"];
    }
 
   ngOnInit(): void {
