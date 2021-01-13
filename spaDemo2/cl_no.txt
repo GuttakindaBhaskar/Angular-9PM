@@ -1,0 +1,69 @@
+Step 1.
+    create the angular application
+
+    > ng new spaDemo2
+
+Step 2.
+    switch to angular application
+
+    > cd spaDemo2
+
+Step 3.
+    create the components
+
+    spaDemo2
+           src
+              app
+                main.component.html
+                main.component.ts
+
+                pageone.component.html
+                pageone.components.ts
+
+                here two urls are ready
+                    1) /page_one
+                    2) /lazy
+
+Step 4.
+    create the CountriesModule
+
+
+        => https://restcountries.eu/rest/v2/all
+
+
+        ---> countries.model.ts
+
+        ---> countries.service.ts
+
+        ---> countries.component.ts
+
+        ---> countries.component.html
+
+        ---> countries.module.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
