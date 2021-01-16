@@ -5680,6 +5680,13 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
+ng-http-loader@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/ng-http-loader/-/ng-http-loader-9.1.0.tgz#70c4da726e0a6d81760e251bcb07a20c4c1fcfab"
+  integrity sha512-7ayp47v+Nj0u7iI2zG67vCv20Rjl1dTr/krO8WGGx1U5a4pI/yKcYaG7PDU6yUa/9OxPSrBMBipeApT2JNq2tA==
+  dependencies:
+    tslib "^2.0.0"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"

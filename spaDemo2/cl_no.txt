@@ -41,6 +41,33 @@ Step 4.
 
         ---> countries.module.ts
 
+Step 5.
+    implement CanLoad Permission
+
+
+    spaDemo2
+           src
+             app
+               auth.guard.ts
+
+
+Step 6.
+     implement the routing
+
+
+     app.module.ts
+
+
+
+    => CanActivate
+
+    => CanDeactivate
+
+    => CanActivateChild
+
+    => CanLoad
+
+
 
 
 
