@@ -259,6 +259,86 @@ spaDemo1
 
 
 
+communication between components
+================================
+
+   - as a angular developer, we can create more than one component.
+
+   - angular applications are component based applications.
+
+   - as a angular developer, we can provide communication between components.
+
+      1) @Input()
+
+      2) @Output()
+
+      3) @ViewChild()
+
+      4) @ViewChildren()
+
+   - we can provide communication between parent component to child component with the help of @Input() decorator.
+
+   - we can provide communication between child component to parent component with the help of @Output() decorator. 
+
+   - we can provide communication between siblings by using @ViewChild() and @ViewChildren() decorators.
+
+
+
+steps to provide the communication between parent component to child component
+==============================================================================
+1) create the angular application
+
+      > ng new commEx
+
+
+2) switch to angular application
+
+      > cd commEx
+
+
+3) create the child component
+
+      ************************************************
+      commEx
+           src
+             app
+                child.component.ts
+                child.component.html
+      ************************************************
+
+4) create the parent component
+
+
+   ****************************************************
+   commEx
+        src  
+          app
+            parent.component.ts
+            parent.component.html
+   ***************************************************
+
+
+5) bootstrap parent component
+
+
+steps to share the data from child component to parent component
+================================================================
+1) declare @Output() decorator in child component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
