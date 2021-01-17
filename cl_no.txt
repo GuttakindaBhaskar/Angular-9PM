@@ -326,6 +326,75 @@ steps to share the data from child component to parent component
 1) declare @Output() decorator in child component
 
 
+                                                ***** Directives *****
+
+      - Directives enhances the view capabilities.
+
+      - we have two types of Directives.
+
+               1) predefined directives
+
+               2) custom directives
+
+      - the directives given by angular framework called as predefined directives.
+
+      - the directives developed by us called as custom directives.
+
+      - directives categorized into 3 types.
+
+            1) event based directives
+
+            2) structural directives
+
+            3) attribute type directives
+
+      - we will handle events(click,dblclick,mouse enter,....) with the help of event based directives
+
+      - we will manipulate browser memory with the help of structural directives.
+
+      - commonly used to directives are attribute type directives.
+
+      - event based directives surrounder with "()"
+
+      - structural directives prefix with "*"
+
+      - attribute type directives surrounder with "[]"
+
+predefined directives
+=====================
+      1) [(ngModel)]
+
+      2) (click)
+
+      3) (dblclick)
+
+      4) *ngFor        
+      5) *ngIf
+
+      6) [ngStyle]
+
+      7) [ngClass]
+
+      8) [ngSwitch]
+
+      9) (ngSubmit)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

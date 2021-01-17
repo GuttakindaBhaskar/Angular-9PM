@@ -1,0 +1,26 @@
+ViewChild & ViewChildren
+========================
+    - both ViewChild & ViewChildren are used to provide the communication between sibilings.
+
+Step 1.
+    create the Comp2 with two variables
+
+**************************************************
+viewChildEx
+          src
+            app
+              second.component.ts
+              second.component.html
+***************************************************
+
+
+Step 2.
+    create the first component
+
+**********************************************************
+viewChildEx
+          src
+            app
+              first.component.ts
+              first.component.html
+**********************************************************
