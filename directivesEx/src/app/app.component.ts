@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     //model
-    login_details:any = {"uname":"","upwd":""};
+    login_details:any = {"uname":"Sai","upwd":"Sai"};
 
 
     login():any{
@@ -19,5 +19,17 @@ export class AppComponent {
     }
 
     count:number = 0;
+
+    getColor():any{
+      return "pink";
+    }
+
+    loginFn(){
+      if(this.login_details.uname === "admin" && this.login_details.upwd === "admin"){
+          alert("Login Success");
+      }else{
+        alert("Login Fail");
+      }
+    }
 
 }

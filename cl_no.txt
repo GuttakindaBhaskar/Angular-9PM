@@ -369,6 +369,7 @@ predefined directives
       3) (dblclick)
 
       4) *ngFor        
+      
       5) *ngIf
 
       6) [ngStyle]

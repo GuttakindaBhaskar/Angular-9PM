@@ -9,7 +9,213 @@
 </fieldset>
 -->
 
+<!--
 <button class="glyphicon glyphicon-plus" (dblclick)="count=count+1"></button>
 <button class="btn btn-primary">{{count}}</button>
 <button class="glyphicon glyphicon-minus" (dblclick)="count=count-1"></button>
+-->
+
+
+<!--
+<div *ngFor="let x of ['Angular11','ReactJS','VueJS','NodeJS','MongoDB'];
+            let i = index;
+            let f = first;
+            let l = last;
+            let o = odd;
+            let e = even;">
+    {{x}}....{{i}}....{{f}}....{{l}}....{{o}}....{{e}}
+</div>
+-->
+<!--
+<div *ngIf="true">
+    Hello
+</div>
+-->
+
+<!--
+<p *ngIf="true;then thenBlock;else elseBlock"></p>
+<ng-template #thenBlock>
+    Hello
+</ng-template>
+<ng-template #elseBlock>
+    Hi
+</ng-template>
+-->
+
+
+
+<!--
+    [ngStyle]
+        - used to apply the css to the DOM Elements
+                div
+                h1
+                table
+                ---
+                ---
+                ---
+-->
+
+<!--
+<h1 [ngStyle]="{'color':'green',
+                'background-color':'red'}">Hello</h1>
+
+<h1 [ngStyle]="{'color':count==100?'red':'green'}">Welcome</h1>
+
+<h1 [ngStyle]="{'color':getColor()}">Hi</h1>
+-->
+
+
+
+
+
+
+
+<!--
+    [ngClass]
+    ---------
+        - used to apply the bootstrap to dom elements
+            Ex.
+                div
+                h1
+                p
+                ---
+                ---
+                ---
+
+<h1 [ngClass]="{'text-success':true}">Hello_1</h1>
+<h1 [ngClass]="{'text-danger':count===0}">Hello_2</h1>
+
+<div *ngFor="let x of [10,20,30,40,50]" [ngClass]="{
+    'text-success':x===10,
+    'text-primary':x===20,
+    'text-danger':x===30,
+    'text-secondary':x===40
+}">
+        <h2>{{x}}</h2>    
+</div>
+-->
+
+
+
+<!--
+    (ngSubmit)
+    ----------
+        - used to submit the form
+-->
+
+<fieldset>
+    <legend>Login Form</legend>
+
+    <form (ngSubmit)="loginFn()">
+        <input type="text" name="uname" [(ngModel)]="login_details.uname">
+        <br><br>
+        <input type="password" name="upwd" [(ngModel)]="login_details.upwd">
+        <br><br>
+        <input type="submit">
+    </form>
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
