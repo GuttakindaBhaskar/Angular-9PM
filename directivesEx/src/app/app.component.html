@@ -9,6 +9,8 @@
 </fieldset>
 -->
 
+
+
 <!--
 <button class="glyphicon glyphicon-plus" (dblclick)="count=count+1"></button>
 <button class="btn btn-primary">{{count}}</button>
@@ -101,7 +103,7 @@
     (ngSubmit)
     ----------
         - used to submit the form
--->
+
 
 <fieldset>
     <legend>Login Form</legend>
@@ -114,6 +116,60 @@
         <input type="submit">
     </form>
 </fieldset>
+-->
+
+
+<!--
+<ul *ngFor="let obj of arr"
+    [ngSwitch]="obj.id">
+
+    <li *ngSwitchCase="111" [ngClass]="{'text-success':true}" [ngStyle]="{'font-size':'20px'}">{{obj | json}}</li>
+    <li *ngSwitchCase="222" [ngClass]="{'text-primary':true}" [ngStyle]="{'font-size':'20px'}">{{obj | json}}</li>
+    <li *ngSwitchCase="333" [ngClass]="{'text-danger':true}" [ngStyle]="{'font-size':'20px'}">{{obj | json}}</li>
+    <li *ngSwitchCase="444" [ngClass]="{'text-info':true}" [ngStyle]="{'font-size':'20px'}">{{obj | json}}</li>
+    <li *ngSwitchDefault [ngClass]="{'text-secondary':true}" [ngStyle]="{'font-size':'20px'}">{{obj | json}}</li>
+</ul>
+-->
+
+
+<!--
+<h1 [var_one]="c_one.value" [var_two]="c_two.value" appMyDir>Hello, Welcome to Attribute Type Custom Directives !!!</h1>
+<br><br>
+<input type="color" #c_one> <br><br>
+<input type="color" #c_two>
+-->
+
+
+<h1 *hello="true">Hello</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

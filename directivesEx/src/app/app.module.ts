@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from "@angular/forms";
+import { MyDirDirective } from './my-dir.directive';
+import { HelloDirective } from './hello.directive';
  
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyDirDirective,
+    HelloDirective
   ],
   imports: [
     BrowserModule,
