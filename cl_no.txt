@@ -381,6 +381,76 @@ predefined directives
       9) (ngSubmit)
 
 
+                                             ****** Forms ******
+
+         - Angular supports two types of forms.
+
+               1) Template Driven Forms
+
+               2) Model Driven Forms
+
+         - Template Driven Forms mainly focused on application design.
+
+         - Model Driven Forms mainly focused on Application Model
+
+
+Model Driven Forms
+==================
+
+   - [formGroup] directive used to assign the logical name to the form.
+
+   - formControlName directive used to give the logical name to the form fields.
+
+
+*************************************
+mdfEx
+    src
+      app.component.html
+      app.component.ts
+
+      app.module.ts
+*************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

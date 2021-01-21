@@ -1,0 +1,103 @@
+<div class="container">
+   <form [formGroup]="employeeDetails" (ngSubmit)="register()">
+      <!-- First Name-->
+      <div class="form-group">
+         <label>First Name</label>
+         <input type="text"
+                name="fname"
+                class="form-control"
+                formControlName="fname"
+                required>
+      </div>
+      <!--validations-->
+      <!--required-->
+      <div *ngIf="employeeDetails.controls['fname'].hasError('required')"
+           class="alert alert-danger">
+            **** First Name Required ****
+      </div>
+      <!--minlength-->
+      <div *ngIf="employeeDetails.controls['fname'].hasError('minlength')"
+           class="alert alert-danger">
+            **** minimum 3 characters are required ****
+      </div>
+      <!-- maxlength -->
+      <div *ngIf="employeeDetails.controls['fname'].hasError('maxlength')"
+           class="alert alert-danger">
+            **** maximum 6 characters are allowed *****    
+      </div>
+
+
+      <!-- Last Name-->
+      <div class="form-group">
+          <label>Last Name</label>
+          <input type="text"
+                 name="lname"
+                 class="form-control"
+                 formControlName="lname">
+      </div>
+
+
+      <!--Email-->
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email"
+               name="email"
+               formControlName="email"
+               class="form-control">
+      </div>
+
+      <!-- SubGroup -->
+      <div class="form-group" formGroupName="addr">
+          <!-- City -->
+          <div class="form-group">
+             <label>City</label>
+             <input type="text" 
+                    class="form-control" 
+                    name="city" 
+                    formControlName="city">
+          </div>
+          <!-- Address Lane-->
+          <div class="form-group">
+              <label>Address</label>
+              <input type="text"
+                     class="form-control"
+                     name="addresslane"
+                     formControlName="addresslane">
+          </div>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+          <label>Gender</label>
+          <input type="radio"
+                 name="gender"
+                 value="male"
+                 formControlName="gender"
+                 class="form-control"> <b>Male</b>
+          <input type="radio"
+                 name="gender"
+                 value="female"
+                 formControlName="gender"
+                 class="form-control"> <b>Female</b>
+      </div>
+
+
+      <!-- Country -->
+      <div class="form-group">
+          <label>Country</label>
+          <select name="country" formControlName="country" class="form-control">
+             <option value="india">India</option>
+             <option value="usa">USA</option>
+             <option value="uk">London</option>
+             <option value="jarmany">Jermany</option>
+             <option value="singapore">Singapore</option>
+          </select>
+      </div>
+
+
+      <!-- Submit Button -->
+      <div class="form-group">
+          <input type="submit" class="btn btn-primary">
+      </div>
+   </form>
+</div>
