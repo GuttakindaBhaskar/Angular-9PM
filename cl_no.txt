@@ -412,6 +412,146 @@ mdfEx
 *************************************
 
 
+                                                NgRx Package
+
+1) store
+
+      - store is the main part of State Management Application.
+
+2) reducer
+
+      - Application business logic called as reducer.
+
+3) initialState
+
+      - application default values called as initialState
+
+4) state
+
+      - reducer output called as State.
+
+5) dispatch
+
+      - Requesting to store called as dispatch
+
+      - dispatch contain 
+
+            1) Action
+
+            2) payload
+
+
+6) subscribe
+
+      - receving the state from store called as subscribe.
+
+
+Ex.
+   consume below local rest api call.
+
+
+   => http://localhost:8080/api/products
+
+
+
+Step 1.
+   create the angular project
+
+      > ng new productsStateManagementEx
+
+Step 2.
+
+      switch to productsStateManagementEx
+
+      > cd productsStateManagementEx
+
+Step 3.
+
+      download the node modules.
+
+      => @ngrx/store
+
+      => @ngrx/effects
+
+
+      > yarn add @ngrx/store @ngrx/effects --save
+
+
+create the modal
+================
+
+**********************************************************
+productsStateManagementEx
+                        src
+                          app
+                            modal
+                              products.modal.ts
+**********************************************************
+
+         - finally "Product" modal is ready
+
+      
+create the actions
+===================
+
+*******************************************************************
+productsStateManagementEx
+                        src
+                          app
+                           actions
+                              products.actions.ts
+*******************************************************************
+
+   enum ===> ProductActionTypes
+
+
+   type  ===> ProductAction
+
+               GetProducts 
+               GetProductsSuccess 
+               GetProductsFail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
