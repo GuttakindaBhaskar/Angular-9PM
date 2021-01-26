@@ -1,0 +1,139 @@
+Rest URL : http://localhost:8080/api/products
+
+=> @ngrx/effects
+
+=> @ngrx/store
+
+=> ng-http-loader
+
+
+create the modal
+
+****************************************
+productStateEx
+             src
+               app
+                 modal
+                   product.modal.ts
+****************************************
+
+
+create the actions
+
+    - our application requirements called as actions.
+
+    - in general we will create actions by using "enum", "classes or interfaces"
+
+
+***********************************************************
+productStateEx
+             src
+               app
+                 actions
+                     products.action.ts
+***********************************************************
+
+    finally enum is ready with following name
+
+            "ProductActionTypes"
+
+    finally Actions are ready
+
+            "ProductActions"
+
+                    => ProductsLoad
+
+                    => ProductsLoadSuccess
+
+                    => ProductsLoadFail
+
+index.ts
+
+
+create the service
+
+
+**************************************************************
+productStateEx
+             src
+               app
+                 services
+                    products.service.ts
+**************************************************************
+
+    finally "productsService" ready with "getAllProducts()"
+
+
+implement the effects
+
+    - implementation of actions called as Effects.
+
+*************************************************************************
+productStateEx
+             src
+               app
+                 effects
+                     products.effects.ts
+*************************************************************************
+
+
+implement the reducer
+
+************************************************************************
+productStateEx
+             src
+               app
+                 reducer
+                    products.reducer.ts
+************************************************************************
+
+
+implement the selector
+
+**************************************************************************
+productStateEx
+             src
+               app
+                 selector
+                    products.selector.ts
+**************************************************************************
+
+
+create the Component
+
+app.component.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+

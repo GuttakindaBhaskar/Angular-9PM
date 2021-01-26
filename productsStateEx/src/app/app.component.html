@@ -1,0 +1,34 @@
+<ng-http-loader></ng-http-loader>
+<table border="1"
+       cellpadding="10px"
+       cellspacing="10px"
+       align="center">
+    <thead style="background-color: gray;">
+       <tr>
+         <th>_id</th>
+         <th>name</th>
+         <th>category</th>
+         <th>image</th>
+         <th>price</th>
+         <th>brand</th>
+         <th>rating</th>
+         <th>description</th>
+         <th>countInStock</th>
+         <th>numReviews</th>
+       </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let obj of products">
+           <td>{{obj._id}}</td>
+           <td>{{obj.name}}</td>
+           <td>{{obj.category}}</td>
+           <td><img width="100px" height="50px" src="{{obj.image}}"></td>
+           <td>{{obj.price}}</td>
+           <td>{{obj.brand}}</td>
+           <td>{{obj.rating}}</td>
+           <td>{{obj.description}}</td>
+           <td>{{obj.countInStock}}</td>
+           <td>{{obj.numReviews}}</td>
+        </tr>
+    </tbody>
+</table>
