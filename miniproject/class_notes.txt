@@ -1,0 +1,160 @@
+1) deploy images in S3 bucket.
+
+    https://ashokit-miniprojecta-app.s3.ap-south-1.amazonaws.com/jeans3.jpeg
+
+
+2) create the database
+
+    => miniproject-ashokit   (database name)
+
+    => products              (collection name)
+
+    URL  : mongodb+srv://admin:admin@miniprojectdb.nzphu.mongodb.net/miniproject-ashokit?retryWrites=true&w=majority
+
+***************************** make the server ready ****************************
+
+1) create the directory
+
+        Ex.
+                server
+
+2) switch to server directory
+
+        > cd server
+
+3) download the node modules
+
+        => express
+
+        => mongodb
+
+        => cors
+
+        => body-parser
+
+        > yarn add express mongodb cors body-parser --save
+
+4) develop the server
+
+        server.js
+
+5) start the node server
+
+        > node server
+
+6) test the rest api call with Postman
+
+        => http://localhost:8080/products
+
+
+
+                                                        ******* Front End *******
+
+1) create the angular application
+
+        > ng new miniproject-app
+
+2) switch to angular application
+
+        > cd miniproject-app
+
+3) add the angular material
+
+        > ng add @angular/material
+
+4) download the angular libraries
+
+        => @ngrx/effects
+
+        => @ngrx/store
+
+        => ng-http-loader
+
+        > yarn add @ngrx/effects @ngrx/store ng-http-loader --save
+
+
+**************************************************************************************
+
+=> create the modal
+
+miniproject-app 
+               src
+                 app
+                   modal
+                      product.modal.ts
+
+
+=> create the actions
+
+miniproject-app
+              src
+                app
+                  actions
+                     product.action.ts
+
+        finally "ProductActionTypes" are ready
+
+        finally "ProductActions" also ready
+
+
+=> create the service
+
+miniproject-app
+              src
+                app
+                  services
+                    products.service.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
