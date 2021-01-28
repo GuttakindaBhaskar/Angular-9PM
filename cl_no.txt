@@ -512,6 +512,45 @@ productsStateManagementEx
                GetProductsFail
 
 
+implement effects
+
+********************************************************
+miniproject-app
+              src
+                 app
+                   effects
+                      products.effects.ts
+*******************************************************
+
+
+implement the reducer
+
+
+******************************************************
+miniproject-app  
+              src
+                app
+                  reducer
+                     products.reducer.ts
+*****************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

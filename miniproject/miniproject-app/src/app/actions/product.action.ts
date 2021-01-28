@@ -7,14 +7,14 @@ export enum ProductActionTypes{
     GetProductsFail = '[Product] Get Prosucts Fail'
 };
 export class GetProducts implements Action{
-    public readonly type = typeof ProductActionTypes.GetProducts;
+    public readonly type =  ProductActionTypes.GetProducts;
 };
 export class GetProductsSuccess implements Action{
-    public readonly type = typeof ProductActionTypes.GetProductsSuccess;
+    public readonly type =  ProductActionTypes.GetProductsSuccess;
     public constructor(public payload:Product[]){}
 };
 export class GetProductsFail implements Action{
-    public readonly type = typeof ProductActionTypes.GetProductsFail;
+    public readonly type =  ProductActionTypes.GetProductsFail;
     public constructor(public error:HttpErrorResponse){}
 };  
 export type ProductActions = GetProducts | GetProductsSuccess |  GetProductsFail;

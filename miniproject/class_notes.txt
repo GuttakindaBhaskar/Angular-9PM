@@ -110,6 +110,15 @@ miniproject-app
 
 
 
+create the selector
+
+***********************************************************
+miniproject-app
+              src
+                app
+                  selector
+                     product.selector.ts
+**********************************************************
 
 
 
