@@ -8,6 +8,10 @@ import { StoreModule } from '@ngrx/store';
 import { productsReducer } from './reducer/products.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { productEffects } from './effects/products.effects';
+import { NgHttpLoaderModule } from 'ng-http-loader';
+
+import { MatTableModule } from "@angular/material/table";
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,10 @@ import { productEffects } from './effects/products.effects';
     BrowserAnimationsModule,
     HttpClientModule,
     StoreModule.forRoot({products:productsReducer}),
-    EffectsModule.forRoot([productEffects])
+    EffectsModule.forRoot([productEffects]),
+    NgHttpLoaderModule.forRoot(),
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
