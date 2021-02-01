@@ -1,33 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
-import { StoreModule } from '@ngrx/store';
-import { productsReducer } from './reducer/products.reducer';
-import { EffectsModule } from '@ngrx/effects';
-import { productEffects } from './effects/products.effects';
-import { NgHttpLoaderModule } from 'ng-http-loader';
+import { mainComponent } from './main.component';
+import { RouterModule, Routes } from '@angular/router';
+import { authGuard } from './auth/auth.guard';
 
-import { MatTableModule } from "@angular/material/table";
-import { MatPaginatorModule } from '@angular/material/paginator';
+
+export const appRoutes:Routes = [{
+    path:"products", loadChildren:()=>import("./products.module").then(obj=>obj.productsModule),canLoad:[authGuard]
+}];
+
+export const lazyRoutes:ModuleWithProviders<any> = RouterModule.forRoot(appRoutes);
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    mainComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpClientModule,
-    StoreModule.forRoot({products:productsReducer}),
-    EffectsModule.forRoot([productEffects]),
-    NgHttpLoaderModule.forRoot(),
-    MatTableModule,
-    MatPaginatorModule
+    lazyRoutes
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [mainComponent]
 })
 export class AppModule { }
