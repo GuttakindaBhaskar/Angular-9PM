@@ -1,0 +1,98 @@
+constructor
+===========
+    - constructor will execute at "booting" time.
+
+    - we will define constructor with the help of "constructor" keyword.
+
+    - in general, we will use constructor for "dependency" injection purpose.
+
+    - in general, constructor will execute only once.
+
+
+ngOnChanges
+===========
+
+    - after constructor ngOnChanges life cycle hook will execute immidiately.
+
+    - when ever change detected in "parent component to child component data", automatically ngOnChanges life cycle hook will execute
+
+    - it may execute more than one time based on changes.
+
+
+ngOnInit
+========
+
+    - This life cycle hook called as "first life cycle" hook of component.
+
+    - This life cycle will execute after ngOnChanges.
+
+    - This life cycle hook will execute "only" once.
+
+    - in general, we will place main business logic.
+
+            Ex.
+                    making the service calls
+
+                            ----
+                            ----
+                            ----
+
+ngDoCheck
+=========
+
+    - this life cycle hook will execute ater ngOnInit.
+
+    - if any unknown changes detected in component, by default ngDoCheck life cycle hook will execute 
+
+
+ngAfterContentInit
+==================
+
+    - if memory calculated for view based on response by component, automatically this life cycle hook will execute
+
+
+ngAfterContentChecked
+=====================
+
+    - if memory allotted by framework, then this life cycle hook will execute.
+
+
+ngAfterViewInit
+===============
+
+    - if content initilized on view, then this life cycle hook execute.
+
+
+ngAfterViewChecked
+==================
+
+    - if content rendered successfully then this life cycle hook will execute successfully.
+
+
+
+ngOnDestroy
+===========
+
+    - before destroying the component by angular framework then this cycle hook will execute.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

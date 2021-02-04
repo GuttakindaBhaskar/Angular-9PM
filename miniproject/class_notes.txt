@@ -122,6 +122,61 @@ miniproject-app
 
 
 
+*****************************AWS Deployment*****************************
+
+server deployment
+=================
+
+1) push server code to github
+
+
+2) create the Elasic Bean Stalk
+
+
+3) create the CI/CD Operation
+
+
+
+
+Angular deployment
+==================
+1) configure the cloud end points in Angular application
+
+
+2) create the s3 bucket
+
+        finally "angular-9pm" bucket is ready.
+
+3) enable the static website hosting
+
+        URL : http://angular-9pm.s3-website.ap-south-1.amazonaws.com
+
+4) enable the bucket policy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

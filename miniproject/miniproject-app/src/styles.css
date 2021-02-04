@@ -3,11 +3,29 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-/* div{
-    width: 70%;
-    border: 1px solid salmon;
-    margin: 0 auto;
-    padding: 0.5rem;
-} */
+.my-table{
+    width: 80%;
+    margin: auto;
+}
 
+th{
+    background-color: silver;
+}
+.my_header{
+    color:white;
+    vertical-align: bottom;
+}
+
+.my_img{
+    width: 100px;
+    height: 120px;
+    border: 1px solid salmon;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.my_td{
+    color: palevioletred;
+}
 
